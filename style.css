@@ -1,0 +1,282 @@
+:root {
+    --main-white: #fdfbfb;
+    --main-gray: #151515;
+    --main-red: #be3141;
+    --main-black: #0d0d0d; 
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+  
+html {
+    box-sizing: border-box; 
+}
+  
+body {
+    background-color: var(--main-red);
+    font-family: 'PT Serif', serif;
+}
+  
+#page-box {
+    position: relative;
+    margin: 0 auto;
+    min-width: 290px;
+}
+  
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    min-height: 7rem;
+    background: var(--main-gray);
+    align-items: end;
+    display: grid;
+    grid-template-columns: 1fr 4fr;  
+}
+  
+#logo-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+  
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    list-style: none; 
+}
+  
+@media (max-width: 555px) {
+    header {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+    #logo-box {
+        display: flex;
+    }
+}
+  
+#header-img {
+    width: 7rem;
+    background: var(--main-red);
+}
+  
+h1 {
+    font-size: 2rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: var(--main-red);
+    padding-left: 1rem;
+}
+  
+a {
+    color: var(--main-white);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: var(--main-red);
+}
+  
+/* HEADER END */
+/* MAIN START*/
+  
+h2 {
+    text-align: center;  
+    font-size: calc(2rem + 2vw);
+    padding-bottom: 7rem;
+    padding-top: 17rem;
+    color: var(--main-gray);
+}
+  
+/* TEASHOP START*/
+  
+@media (min-width: 555px) {
+    #tea-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    }
+}
+  
+.product {
+    text-align: center;
+    align-items: center;
+    height: 22rem;
+}
+  
+h3 {
+    font-size: 2rem; 
+    color: var(--main-white);
+}
+  
+.btn {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    position: flex;
+    justify-content: center;
+    border: 0;
+}
+  
+#black-btn {
+    color: rgba(50,50,50,0);
+}
+  
+#black-btn:hover {
+    color: var(--main-white);
+}
+  
+#black{
+    background-image: url(https://images.unsplash.com/photo-1433891248364-3ce993ff0e92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-size: cover;
+    background-position: center;	 
+}
+  
+#black:hover {
+    background: rgba(50,50,50,1);
+}
+  
+#green-btn {
+    color: rgba(143,183,0,0);
+}
+  
+#green-btn:hover {
+    color: var(--main-white);
+}
+  
+#green{
+    background-image: url(https://images.unsplash.com/photo-1582650859079-ee63913ecb84?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+    background-size: cover;
+    background-position: center;	 
+}
+  
+#green:hover{
+    background: rgba(143,183,0,1); 
+}
+  
+#herb-btn {
+    color: rgba(80,136,32,0);
+}
+  
+#herb-btn:hover {
+    color: var(--main-white);
+}
+  
+#herb {
+    background-image: url(https://images.freeimages.com/images/large-previews/7c9/herb-1499742.jpg);
+    background-size: cover;
+    background-position: center;
+}
+  
+#herb:hover {
+    background: rgba(80,136,32,1);
+}
+  
+#white-btn {
+    color: rgba(201,186,167,0);
+}
+
+#white-btn:hover {
+    color: var(--main-white);
+}
+
+#white{
+    background-image: url(https://images.unsplash.com/photo-1543060895-03f57478a710?ixlib=rb-1.2.1&auto=format&fit=crop&w=670&q=80);
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+#white:hover{
+    background: rgba(201,186,167,1);
+}
+  
+/* TEASHOP END */
+  
+h4 {
+    text-align: center;  
+    font-size: calc(1.5rem + 1vw);
+    padding-top: 4rem;
+    color: var(--main-gray);
+}
+  
+/* TEATRIP START*/
+  
+#tea-trip {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin: 3rem 0rem 8rem 0rem; 
+}
+  
+/* TEATRIP END */
+/* TEAMAIL START*/
+  
+#tea-mail {
+    background: var(--main-gray);
+    display: block;
+    padding-top: 1rem;  
+}
+  
+input, #tea-mail p {
+    display: block;
+    height: 2rem;
+    width: 40%;
+    margin: 0.5rem 30% 0rem 30%;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;  
+}
+  
+#tea-mail p {
+    color: var(--main-white);
+    font-size: 1.5rem;
+}
+  
+#top {  
+    margin: 0 30% 0 0;
+    border: 1px solid var(--main-red);
+    border-radius: 0.2rem; 
+}
+  
+input::placeholder {
+    color: var(--main-red);
+}
+  
+#submit {
+    background: var(--main-red);
+    color: var(--main-white);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+  
+#submit:hover {
+    color: var(--main-gray);
+}
+  
+/* TEAMAIL END */
+  
+#end {
+    border: 1px solid var(--main-red);
+    margin: 0 0 0 30%;  
+}
+  
+/* FOOTER START*/
+  
+footer p {
+    color: var(--main-red);
+    font-size: 0.9rem;
+    background: var(--main-gray);
+    text-align: right;
+    padding: 0.5rem 1rem 2rem 0;;
+}
