@@ -108,6 +108,7 @@ h2 {
     text-align: center;
     align-items: center;
     height: 22rem;
+    border: 1px solid var(--main-red);
 }
   
 h3 {
